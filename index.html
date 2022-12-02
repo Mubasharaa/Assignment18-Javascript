@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18</title>
+</head>
+
+<body>
+    <script>
+        //  name = prompt("Enter your name");
+        //     age = prompt("Enter your age");
+            
+        // // // Q1 - Write a function  that takes your name and age as an input parameter and print it by using string concatenation.
+        // function myself() {
+
+        //    var name;
+        //    var age;
+        // }
+        // console.log(name +  "" , age);
+      
+       
+        // Q2 - Write a function name ‘Double’ that takes an input parameter and multiply that parameter by 2 and store the result in a variable and call the function by passing an argument.
+        function Double(x) {
+  return x * 2;
+}
+console.log("After multiply  with 2 number 8 is ",Double(8));
+// - Q3 Write a function to print the square of a number by using function expression and that function can be used as  variable value for other variables
+
+const square = function (number) {
+  return number * number;
+}
+const x = square(9); // x gets the value 16
+
+console.log("The square of 9 is ", x);
+//  Q4 - Write an arrow  function  as an expression  to check the age of the baby . If the age of the baby is less than 18 print Baby else print adult.
+       
+let age = 5;
+
+let Baby_age = (age < 18) ?
+  () => console.log('Baby') :
+  () => console.log('Adult');
+Baby_age(); // Baby
+
+// Q5 - Write an arrow function and print a sum of two numbers by passing a single parameter inside the arrow function.
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+}
+
+let addition = sum(16,78);
+console.log("The two number of sum using arrow function is ",addition); // 94
+
+// Q6 - Write an object ‘cities’ and loop  values of the object's  properties by using for… in Loop and print them.
+const cities = {
+    city1: 'Karachi',
+    city2: 'Lahore',
+    city3: 'Mirpurkhas'
+}
+
+// using for...in
+for ( let key in cities ) {
+
+    // display the properties
+    console.log(`${key} => ${cities[key]}`);
+}
+// Q7 - Write a for…of loop to traverse the array and print the elements of an array with indices.
+for (const [index, value] of ["city1: 'Karachi'", "city2:'Lahore'", "city3: 'Mirpurkhas'"].entries()) {  
+  console.log(index, value)
+}
+// Q8 - Write an unnamed /anonymous  function which calculates the area of a rectangle.
+let area = function(length, breadth){
+    return length * breadth 
+}
+let j = area(30,25) 
+console.log("Area of the rectangle is = ", j);
+
+    </script>
+</body>
+
+</html>
